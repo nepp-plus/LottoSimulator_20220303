@@ -85,6 +85,9 @@ class MainActivity : AppCompatActivity() {
 //            처음 눌리면 > 반복 구매 시작 > 1천만원 사용할때까지 반복
 //            1회 로또 구매 명령 > 완료 되면 다시 1회 로또 구매 > ... 연속 클릭을 자동으로 하는 느낌.
 
+//            핸들러에게, 할일로 처음 등록 (할일 시작)
+            mHandler.post(buyLottoRunnable)
+
 //            반복 구매중 에 눌리면 > 반복 종료
 
         }
